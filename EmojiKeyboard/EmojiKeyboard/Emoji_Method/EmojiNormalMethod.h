@@ -21,6 +21,7 @@
 @property (nonatomic,strong)Emoji_Keyboard_ToolView *toolView;
 @property (nonatomic,assign)id<EmojiNormalMethodDelegate>normalDelegate;
 
+- (instancetype)initWithBecomeFirstResponder:(NSArray *)sender;
 - (instancetype)initWithBecomeFirstResponder:(NSArray *)sender onView:(UIView *)view;
 - (void)ishidden;
 - (void)isRemoveWhenVCDisappear;

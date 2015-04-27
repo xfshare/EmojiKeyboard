@@ -27,6 +27,16 @@
 @end
 
 @implementation EmojiNormalMethod
+
+- (instancetype)initWithBecomeFirstResponder:(NSArray *)sender{
+    self = [super init];
+    if (self) {
+        _firstResponderArr = sender;
+        [self registerNotification];
+
+    }
+    return self;
+}
 - (instancetype)initWithBecomeFirstResponder:(NSArray *)sender onView:(UIView *)view{
     self = [super init];
     if (self) {
